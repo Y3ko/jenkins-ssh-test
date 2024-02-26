@@ -5,7 +5,6 @@ pipeline {
         stage('SSH Command Execution') {
             steps {
                 // SSH credentials ID kullanarak sshagent adımını kullanın
-                sshagent(credentials: ['ssh']) {
                     script {
                         // Komutları çalıştır
                         sh '''
@@ -26,5 +25,4 @@ pipeline {
                 }
             }
         }
-    }
 }
