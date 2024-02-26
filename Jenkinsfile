@@ -19,7 +19,7 @@ pipeline {
                         
                         # NFS sunucusuna SSH üzerinden komutları çalıştır
                         # Burada örnek bir komut kullanıldı, ihtiyacınıza göre değiştirebilirsiniz.
-                        ssh nfs@192.168.1.121 uptime
+                        ssh nfs@192.168.1.121
                         '''
                     }
                 }
